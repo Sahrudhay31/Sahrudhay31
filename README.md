@@ -29,6 +29,7 @@
 ---
 
 ## 📌 Featured Projects
+###Working on
 
 ### 🌍 Tourism Full Stack Application
 - Responsive tourism management system
@@ -50,5 +51,4 @@
 ---
 
 ## 🔗 Connect With Me
-- 📫 Email: yourmail@gmail.com
-- 💼 LinkedIn: (add link here)
+- 📫 Email: munnasahrudhay@gmail.com
