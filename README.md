@@ -15,7 +15,6 @@
 ## 🛠 Tech Stack
 
 ### 💻 Languages
-![C](https://img.shields.io/badge/C-blue?style=for-the-badge&logo=c)
 ![Java](https://img.shields.io/badge/Java-orange?style=for-the-badge&logo=java)
 ![Python](https://img.shields.io/badge/Python-yellow?style=for-the-badge&logo=python)
 ![JavaScript](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript)
@@ -29,7 +28,7 @@
 ---
 
 ## 📌 Featured Projects
-###Working on
+### Working on
 
 ### 🌍 Tourism Full Stack Application
 - Responsive tourism management system
