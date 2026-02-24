@@ -11,7 +11,8 @@
 - 🌱 Exploring System Design & Scalable Applications
 
 ---
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=35&pause=1000&color=F7D260&background=3AFF8700&multiline=true&width=2000&lines=I+Hate+Programming.+I+Hate+Programming.+I+Hate+Programming.+It+works!+I+Love+Programming." alt="Typing SVG" /></a>
+
+<a href="https://git.io/typing-svg"<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=35&pause=1000&color=F7D260&background=3AFF8700&multiline=true&width=2000&lines=I+Hate+Programming.+I+Hate+Programming.+I+Hate+Programming.+It+works!+I+Love+Programming." alt="Typing SVG" /></a>
 
 ### 💻 Languages
 ![Java](https://img.shields.io/badge/Java-orange?style=for-the-badge&logo=java)
