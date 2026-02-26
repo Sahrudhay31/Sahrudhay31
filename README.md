@@ -5,6 +5,7 @@
 ## 🚀 About Me
 - 🎓 Computer Science Student
 - 💻 Currently building Full Stack Web Applications
+- currently Learning Cloud Computing
 - 📚 Learning Data Structures & Algorithms
 - 🔥 Interested in Backend Development & Problem Solving
 - 🌱 Exploring System Design & Scalable Applications
