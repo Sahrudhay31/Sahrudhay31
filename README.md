@@ -16,7 +16,7 @@
 
 ### 🧑‍💻 About Me
 
-<img align="right" width="180" src="https://play.pokemonshowdown.com/sprites/ani/charizard.gif" alt="Charizard" />
+<img align="right" width="220" src="./charizard.svg" alt="Charizard" />
 
 I'm an **AI & Data Science student at Amrita Vishwa Vidyapeetham**, and I like building things that either think for themselves or scale far beyond my laptop — sometimes both.
 
@@ -61,13 +61,27 @@ I'm an **AI & Data Science student at Amrita Vishwa Vidyapeetham**, and I like b
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=sahrudhay31&theme=radical&hide_border=true&background=0D1117" />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sahrudhay31&theme=react-dark&hide_border=true&bg_color=0D1117" width="100%"/>
-
 </div>
 
 ---
 
+### 🐍 Contribution Snake
 
+<div align="center">
+<img src="https://raw.githubusercontent.com/sahrudhay31/sahrudhay31/output/github-contribution-grid-snake.svg" width="100%" alt="green contribution snake animation" />
+</div>
+
+> One-time setup: add the `.github/workflows/snake.yml` file (included below) to this repo, then push to `main`. GitHub Actions will generate this automatically within a minute or two and keep it updated daily — it eats your real green contribution graph.
+
+---
+
+### 🏆 GitHub Trophies
+
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=sahrudhay31&theme=radical&no-frame=true&no-bg=true&margin-w=10&row=1" />
+</div>
+
+---
 
 ### 🌐 Connect with Me
 
