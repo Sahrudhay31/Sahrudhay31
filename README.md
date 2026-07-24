@@ -16,7 +16,6 @@
 
 ### 🧑‍💻 About Me
 
-<img align="right" width="220" src="./charizard.svg" alt="Charizard" />
 
 I'm an **AI & Data Science student at Amrita Vishwa Vidyapeetham**, and I like building things that either think for themselves or scale far beyond my laptop — sometimes both.
 
