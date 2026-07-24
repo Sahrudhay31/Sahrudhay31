@@ -39,77 +39,64 @@
   </defs>
 
   <style>
-    /* --- ANIMATION TIMINGS & KEYFRAMES --- */
-    
-    :root {
-      --anim-dur: 2.5s;
-    }
-
-    /* Subtle hovering for the entire character */
-    /* Subtle hovering for the entire character */
-    #charizard {
-      animation: hover var(--anim-dur) ease-in-out infinite;
-      transform-origin: 400px 300px;
-    }
-
-    /* Wing flapping mechanics */
-    #left-wing {
-      animation: flap-left var(--anim-dur) ease-in-out infinite;
-      transform-origin: 320px 210px;
-    }
-
-    #right-wing {
-      animation: flap-right var(--anim-dur) ease-in-out infinite;
-      transform-origin: 470px 200px;
-    }
-
-    /* Head nodding/breathing motion */
-    #head {
-      animation: nod var(--anim-dur) ease-in-out infinite;
-      transform-origin: 380px 170px;
-    }
-
-    /* Tail swaying */
-    #tail {
-      animation: sway var(--anim-dur) ease-in-out infinite;
-      transform-origin: 480px 390px;
-    }
-
-    /* Tail flame flickering & scaling */
-    #tail-flame {
-      animation: flicker 0.15s ease-in-out infinite alternate;
-      transform-origin: 625px 380px;
-    }
-
-    /* --- KEYFRAME DEFINITIONS --- */
-    @keyframes hover {
+    @keyframes charizard-hover {
       0%, 100% { transform: translateY(0px) rotate(0deg); }
       50% { transform: translateY(-12px) rotate(1deg); }
     }
 
-    @keyframes flap-left {
+    @keyframes charizard-flap-left {
       0%, 100% { transform: rotate(0deg) scaleX(1); }
       50% { transform: rotate(12deg) scaleX(0.88); }
     }
 
-    @keyframes flap-right {
+    @keyframes charizard-flap-right {
       0%, 100% { transform: rotate(0deg) scaleX(1); }
       50% { transform: rotate(-14deg) scaleX(0.85); }
     }
 
-    @keyframes nod {
+    @keyframes charizard-nod {
       0%, 100% { transform: rotate(0deg); }
       50% { transform: rotate(-3deg) translateY(2px); }
     }
 
-    @keyframes sway {
+    @keyframes charizard-sway {
       0%, 100% { transform: rotate(0deg); }
       50% { transform: rotate(5deg) translateY(-2px); }
     }
 
-    @keyframes flicker {
+    @keyframes charizard-flicker {
       0% { transform: scale(0.92) rotate(-2deg); opacity: 0.88; }
       100% { transform: scale(1.08) rotate(3deg); opacity: 1; filter: drop-shadow(0 0 10px #ff6600); }
+    }
+
+    .anim-charizard {
+      animation: charizard-hover 2.5s ease-in-out infinite;
+      transform-origin: 400px 300px;
+    }
+
+    .anim-left-wing {
+      animation: charizard-flap-left 2.5s ease-in-out infinite;
+      transform-origin: 320px 210px;
+    }
+
+    .anim-right-wing {
+      animation: charizard-flap-right 2.5s ease-in-out infinite;
+      transform-origin: 470px 200px;
+    }
+
+    .anim-head {
+      animation: charizard-nod 2.5s ease-in-out infinite;
+      transform-origin: 380px 170px;
+    }
+
+    .anim-tail {
+      animation: charizard-sway 2.5s ease-in-out infinite;
+      transform-origin: 480px 390px;
+    }
+
+    .anim-tail-flame {
+      animation: charizard-flicker 0.15s ease-in-out infinite alternate;
+      transform-origin: 625px 380px;
     }
   </style>
 
@@ -117,15 +104,15 @@
   <rect width="800" height="600" fill="url(#bg-grad)" />
 
   <!-- Main Charizard Container -->
-  <g id="charizard">
+  <g id="charizard" class="anim-charizard">
     
     <!-- TAIL -->
-    <g id="tail">
+    <g id="tail" class="anim-tail">
       <!-- Tail Base & Length -->
       <path d="M 460 380 C 520 420, 500 480, 560 450 C 590 435, 600 425, 610 420 C 590 460, 530 510, 450 430 Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
       
-      <!-- TAIL FLAME (Targeted specifically by multi-animations) -->
-      <g id="tail-flame" filter="url(#glow)">
+      <!-- TAIL FLAME -->
+      <g id="tail-flame" class="anim-tail-flame" filter="url(#glow)">
         <!-- Outer Flame -->
         <path d="M 610 420 C 590 380, 610 340, 630 310 C 640 350, 660 380, 635 430 C 625 440, 620 435, 610 420 Z" fill="url(#fire-grad)" />
         <!-- Inner Hot Core -->
@@ -134,7 +121,7 @@
     </g>
 
     <!-- LEFT WING (Background Wing) -->
-    <g id="left-wing">
+    <g id="left-wing" class="anim-left-wing">
       <!-- Outer Structure -->
       <path d="M 320 210 C 240 120, 150 150, 100 220 C 140 250, 200 240, 230 280 C 260 270, 290 260, 320 225Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
       <!-- Inner Membrane -->
@@ -144,7 +131,7 @@
     </g>
 
     <!-- RIGHT WING (Foreground Wing) -->
-    <g id="right-wing">
+    <g id="right-wing" class="anim-right-wing">
       <!-- Outer Structure -->
       <path d="M 470 200 C 560 90, 680 110, 740 180 C 690 220, 620 210, 580 260 C 540 250, 500 240, 470 210 Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
       <!-- Inner Membrane -->
@@ -184,8 +171,8 @@
       <circle cx="490" cy="310" r="4" fill="#ffffff" />
     </g>
 
-    <!-- HEAD & NECK (Targeted by Nodding Animation) -->
-    <g id="head">
+    <!-- HEAD & NECK -->
+    <g id="head" class="anim-head">
       <!-- Neck -->
       <path d="M 350 220 C 340 180, 360 140, 380 130 C 400 140, 420 170, 430 210 Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
       <!-- Head Base Structure -->
