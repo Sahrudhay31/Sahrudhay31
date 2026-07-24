@@ -1,0 +1,83 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sahrudhay Chirra — Full Stack Developer, Cloud Computing Enthusiast">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0E14"/>
+      <stop offset="100%" stop-color="#151A27"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <clipPath id="clipRound">
+      <rect width="1200" height="280" rx="20"/>
+    </clipPath>
+    <clipPath id="clip1">
+      <rect x="40" y="70" width="0" height="30">
+        <animate attributeName="width" from="0" to="120" dur="0.5s" begin="0.3s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip2">
+      <rect x="40" y="112" width="0" height="42">
+        <animate attributeName="width" from="0" to="380" dur="0.7s" begin="0.9s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip3">
+      <rect x="40" y="162" width="0" height="28">
+        <animate attributeName="width" from="0" to="230" dur="0.5s" begin="1.8s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip4">
+      <rect x="40" y="198" width="0" height="26">
+        <animate attributeName="width" from="0" to="640" dur="1s" begin="2.4s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clipRound)">
+    <rect width="1200" height="280" fill="url(#bgGrad)"/>
+
+    <!-- ambient network nodes (cloud motif) -->
+    <g opacity="0.4">
+      <line x1="1080" y1="60" x2="1130" y2="120" stroke="#00E5FF" stroke-width="1" opacity="0.4"/>
+      <line x1="1130" y1="120" x2="1160" y2="200" stroke="#8B5CF6" stroke-width="1" opacity="0.4"/>
+      <line x1="1040" y1="180" x2="1130" y2="120" stroke="#00E5FF" stroke-width="1" opacity="0.3"/>
+      <circle cx="1080" cy="60" r="3" fill="#00E5FF">
+        <animate attributeName="cy" values="60;40;60" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1130" cy="120" r="2.5" fill="#8B5CF6">
+        <animate attributeName="cy" values="120;95;120" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1040" cy="180" r="2" fill="#00E5FF">
+        <animate attributeName="cy" values="180;160;180" dur="3.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1160" cy="200" r="3" fill="#8B5CF6">
+        <animate attributeName="cy" values="200;175;200" dur="4.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- title bar -->
+    <rect x="0" y="0" width="1200" height="42" fill="#10141C"/>
+    <circle cx="26" cy="21" r="6" fill="#FF5F56"/>
+    <circle cx="48" cy="21" r="6" fill="#FFBD2E"/>
+    <circle cx="70" cy="21" r="6" fill="#27C93F"/>
+    <text x="600" y="26" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#6B7280">sahrudhay@github:~</text>
+
+    <!-- terminal body -->
+    <g font-family="'JetBrains Mono','Fira Code',monospace">
+      <text x="40" y="93" font-size="20" fill="#00E5FF" clip-path="url(#clip1)">$ whoami</text>
+      <text x="40" y="145" font-size="34" font-weight="700" fill="#E6EDF3" clip-path="url(#clip2)">sahrudhay_chirra</text>
+      <text x="40" y="183" font-size="20" fill="#00E5FF" clip-path="url(#clip3)">$ cat stack.json</text>
+      <text x="40" y="218" font-size="16" fill="#8B5CF6" clip-path="url(#clip4)">&gt; Full-Stack Dev · Cloud Computing (AWS) · Always shipping</text>
+
+      <!-- blinking cursor -->
+      <rect x="660" y="200" width="10" height="24" fill="#00E5FF" opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" dur="1s" begin="3.4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- bottom accent bar -->
+    <rect x="0" y="274" width="0" height="6" fill="url(#accentGrad)">
+      <animate attributeName="width" from="0" to="1200" dur="1.2s" begin="0.1s" fill="freeze"/>
+    </rect>
+  </g>
+</svg>
