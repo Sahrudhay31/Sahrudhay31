@@ -70,16 +70,6 @@ I'm an **AI & Data Science student at Amrita Vishwa Vidyapeetham**, and I like b
 <img src="https://raw.githubusercontent.com/sahrudhay31/sahrudhay31/output/github-contribution-grid-snake.svg" width="100%" alt="green contribution snake animation" />
 </div>
 
-> One-time setup: add the `.github/workflows/snake.yml` file (included below) to this repo, then push to `main`. GitHub Actions will generate this automatically within a minute or two and keep it updated daily — it eats your real green contribution graph.
-
----
-
-### 🏆 GitHub Trophies
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=sahrudhay31&theme=radical&no-frame=true&no-bg=true&margin-w=10&row=1" />
-</div>
-
 ---
 
 ### 🌐 Connect with Me
