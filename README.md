@@ -1,47 +1,87 @@
-<h1 align="center">Hi 👋, I'm Sahrudhay</h1>
+<div align="center">
+
+<img src="./assets/banner.svg" width="100%" alt="Sahrudhay Chirra — Full Stack Developer, Cloud Computing Enthusiast" />
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="450">
+
+</div>
 
 ---
 
-## 🚀 About Me
-- 🎓 Computer Science Student
-- 💻 Currently building Full Stack Web Applications
-- currently Learning Cloud Computing
-- 📚 Learning Data Structures & Algorithms
-- 🔥 Interested in Backend Development & Problem Solving
-- 🌱 Exploring System Design & Scalable Applications
+### 🧑‍💻 About Me
+
+<img align="right" width="280" src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif">
+
+- 🎓 Student, currently building projects across the **full stack**
+- ☁️ Exploring **Cloud Computing** with AWS
+- 🌱 Learning something new in tech every single week
+- 💡 Interested in scalable web apps and cloud-native systems
+- 🔗 Portfolio: [sahrudhay31.github.io/Portfolio-Website](https://sahrudhay31.github.io/Portfolio-Website/)
+- 📫 LinkedIn: [sahrudhay-chirra](https://www.linkedin.com/in/sahrudhay-chirra/)
+
+<br clear="right"/>
 
 ---
 
-<a href="https://git.io/typing-svg" ><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=35&pause=1000&color=F7D260&background=3AFF8700&multiline=true&width=2000&lines=I+Hate+Programming.+I+Hate+Programming.+I+Hate+Programming.+It+works!+I+Love+Programming." alt="Typing SVG" /></a>
+### 🛠️ Tech Stack
 
-### 💻 Languages
-![Java](https://img.shields.io/badge/Java-orange?style=for-the-badge&logo=java)
-![Python](https://img.shields.io/badge/Python-yellow?style=for-the-badge&logo=python)
-![JavaScript](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript)
+<div align="center">
 
-### 🌐 Web Development
-![HTML](https://img.shields.io/badge/HTML5-red?style=for-the-badge&logo=html5)
-![CSS](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3)
-![Node.js](https://img.shields.io/badge/Node.js-green?style=for-the-badge&logo=node.js)
-![MySQL](https://img.shields.io/badge/MySQL-blue?style=for-the-badge&logo=mysql)
+**Languages**
 
----
+<img src="https://skillicons.dev/icons?i=python,java,c,js&theme=dark" />
 
-## 📌 Featured Projects
-### Working on
+**Frontend**
 
-### 🌍 Tourism Full Stack Application
-- Responsive tourism management system
-- User login & admin dashboard
-- MySQL database integration
+<img src="https://skillicons.dev/icons?i=html,css,react,nextjs,vite&theme=dark" />
 
-### 📂 Bulk File Renaming Tool
-- Google Apps Script automation
-- Renames files in bulk in Google Drive
+**Cloud, Database & Tools**
+
+<img src="https://skillicons.dev/icons?i=aws,mysql,git,github,vscode&theme=dark" />
+
+</div>
 
 ---
 
+### 📊 GitHub Stats
 
+<div align="center">
 
-## 🔗 Connect With Me
-- 📫 Email: munnasahrudhay@gmail.com
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=sahrudhay31&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahrudhay31&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" />
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sahrudhay31&theme=radical&hide_border=true&background=0D1117" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=sahrudhay31&theme=react-dark&hide_border=true&bg_color=0D1117" width="100%"/>
+
+</div>
+
+---
+
+### 🏆 GitHub Trophies
+
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=sahrudhay31&theme=radical&no-frame=true&no-bg=true&margin-w=10&row=1" />
+</div>
+
+---
+
+### 🌐 Connect with Me
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/sahrudhay-chirra/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://sahrudhay31.github.io/Portfolio-Website/" target="_blank">
+  <img src="https://img.shields.io/badge/Portfolio-2E9EF7?style=for-the-badge&logo=googlechrome&logoColor=white" />
+</a>
+
+</div>
+
+---
+
+<div align="center">
+<img src="./assets/footer.svg" width="100%" alt="" />
+<p><i>Thanks for visiting — ⭐ a repo of mine if you found something useful!</i></p>
+</div>
