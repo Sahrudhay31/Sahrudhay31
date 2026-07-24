@@ -1,41 +1,212 @@
-<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Charizard">
+<svg xmlns="http://w3.org" viewBox="0 0 800 600" width="100%" height="100%">
   <defs>
-    <radialGradient id="fireGlow" cx="50%" cy="55%" r="55%">
-      <stop offset="0%" stop-color="#FF9A3C" stop-opacity="0.55"/>
-      <stop offset="55%" stop-color="#FF5F1F" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#FF5F1F" stop-opacity="0"/>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#311432" />
+      <stop offset="100%" stop-color="#0f051d" />
     </radialGradient>
+
+    <!-- Charizard Skin Gradient -->
+    <linearGradient id="skin-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8a00" />
+      <stop offset="100%" stop-color="#cc4400" />
+    </linearGradient>
+
+    <!-- Belly Gradient -->
+    <linearGradient id="belly-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffebaa" />
+      <stop offset="100%" stop-color="#f3cb65" />
+    </linearGradient>
+
+    <!-- Inner Wing Gradient -->
+    <linearGradient id="wing-inner-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2bb19c" />
+      <stop offset="100%" stop-color="#135255" />
+    </linearGradient>
+
+    <!-- Fire Gradient -->
+    <linearGradient id="fire-grad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffcc00" />
+      <stop offset="50%" stop-color="#ff6600" />
+      <stop offset="100%" stop-color="#ff0000" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Shadow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
 
-  <!-- pulsing glow -->
-  <circle cx="120" cy="130" r="95" fill="url(#fireGlow)">
-    <animate attributeName="r" values="90;105;90" dur="2.4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.4s" repeatCount="indefinite"/>
-  </circle>
+  <style>
+    /* --- ANIMATION TIMINGS & KEYFRAMES --- */
+    
+    :root {
+      --anim-dur: 2.5s;
+    }
 
-  <!-- rising embers -->
-  <g fill="#FFB454">
-    <circle cx="80" cy="200" r="2.2" opacity="0.8">
-      <animate attributeName="cy" values="200;40" dur="3.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.8;0" dur="3.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="160" cy="205" r="1.8" opacity="0.7">
-      <animate attributeName="cy" values="205;50" dur="2.6s" begin="0.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.7;0" dur="2.6s" begin="0.6s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="120" cy="210" r="2.5" opacity="0.9">
-      <animate attributeName="cy" values="210;45" dur="3.6s" begin="1.1s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.9;0" dur="3.6s" begin="1.1s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="60" cy="150" r="1.6" opacity="0.6">
-      <animate attributeName="cy" values="150;20" dur="2.9s" begin="1.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;0" dur="2.9s" begin="1.6s" repeatCount="indefinite"/>
-    </circle>
-  </g>
+    /* Subtle hovering for the entire character */
+    #charizard {
+      animation: hover var(--anim-dur) ease-in-out infinite;
+      transform-origin: 400px 300px;
+    }
 
-  <!-- charizard sprite, gentle float -->
-  <g>
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="2.2s" repeatCount="indefinite"/>
-    <image href="https://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif" x="40" y="30" width="160" height="160"/>
+    /* Wing flapping mechanics */
+    #left-wing {
+      animation: flap-left var(--anim-dur) ease-in-out infinite;
+      transform-origin: 320px 210px;
+    }
+
+    #right-wing {
+      animation: flap-right var(--anim-dur) ease-in-out infinite;
+      transform-origin: 470px 200px;
+    }
+
+    /* Head nodding/breathing motion */
+    #head {
+      animation: nod var(--anim-dur) ease-in-out infinite;
+      transform-origin: 380px 170px;
+    }
+
+    /* Tail swaying */
+    #tail {
+      animation: sway var(--anim-dur) ease-in-out infinite;
+      transform-origin: 480px 390px;
+    }
+
+    /* Tail flame flickering & scaling */
+    #tail-flame {
+      animation: flicker 0.15s ease-in-out infinite alternate, flame-sway var(--anim-dur) ease-in-out infinite;
+      transform-origin: 610px 420px;
+    }
+
+    /* --- KEYFRAME DEFINITIONS --- */
+    @keyframes hover {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(1deg); }
+    }
+
+    @keyframes flap-left {
+      0%, 100% { transform: rotate(0deg) scaleX(1); }
+      50% { transform: rotate(15deg) scaleX(0.85) skewY(-5deg); }
+    }
+
+    @keyframes flap-right {
+      0%, 100% { transform: rotate(0deg) scaleX(1); }
+      50% { transform: rotate(-18deg) scaleX(0.82) skewY(6deg); }
+    }
+
+    @keyframes nod {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-4deg) translateY(2px); }
+    }
+
+    @keyframes sway {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(8deg) translateY(-5px); }
+    }
+
+    @keyframes flame-sway {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(35px, -20px) rotate(10deg); }
+    }
+
+    @keyframes flicker {
+      0% { transform: scale(0.9) rotate(-2deg); opacity: 0.85; }
+      100% { transform: scale(1.1) rotate(3deg); opacity: 1; filter: drop-shadow(0 0 12px #ff6600); }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-grad)" />
+
+  <!-- Main Charizard Container -->
+  <g id="charizard">
+    
+    <!-- TAIL -->
+    <g id="tail">
+      <!-- Tail Base & Length -->
+      <path d="M 460 380 C 520 420, 500 480, 560 450 C 590 435, 600 425, 610 420 C 590 460, 530 510, 450 430 Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
+      
+      <!-- TAIL FLAME (Targeted specifically by multi-animations) -->
+      <g id="tail-flame" filter="url(#glow)">
+        <!-- Outer Flame -->
+        <path d="M 610 420 C 590 380, 610 340, 630 310 C 640 350, 660 380, 635 430 C 625 440, 620 435, 610 420 Z" fill="url(#fire-grad)" />
+        <!-- Inner Hot Core -->
+        <path d="M 612 418 C 602 395, 615 370, 628 350 C 632 375, 642 395, 628 425 Z" fill="#ffffff" opacity="0.9" />
+      </g>
+    </g>
+
+    <!-- LEFT WING (Background Wing) -->
+    <g id="left-wing">
+      <!-- Outer Structure -->
+      <path d="M 320 210 C 240 120, 150 150, 100 220 C 140 250, 200 240, 230 280 C 260 270, 290 260, 320 225Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
+      <!-- Inner Membrane -->
+      <path d="M 305 215 C 240 140, 160 168, 112 223 C 145 245, 195 235, 230 273 C 255 255, 280 240, 305 215 Z" fill="url(#wing-inner-grad)" />
+      <!-- Wing Bone/Thumb Claws -->
+      <path d="M 100 220 L 95 215 L 102 210 Z" fill="#ffffff" stroke="#993300" />
+    </g>
+
+    <!-- RIGHT WING (Foreground Wing) -->
+    <g id="right-wing">
+      <!-- Outer Structure -->
+      <path d="M 470 200 C 560 90, 680 110, 740 180 C 690 220, 620 210, 580 260 C 540 250, 500 240, 470 210 Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
+      <!-- Inner Membrane -->
+      <path d="M 485 205 C 560 115, 660 132, 725 185 C 680 215, 615 205, 580 252 C 545 235, 515 225, 485 205 Z" fill="url(#wing-inner-grad)" />
+      <!-- Wing Bone/Thumb Claws -->
+      <path d="M 740 180 L 748 175 L 742 170 Z" fill="#ffffff" stroke="#993300" />
+    </g>
+
+    <!-- REAR LEGS & FEET -->
+    <g id="legs">
+      <!-- Left Leg -->
+      <path d="M 310 380 C 280 400, 270 440, 290 470 C 310 490, 340 480, 350 450" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
+      <!-- Right Leg -->
+      <path d="M 450 370 C 490 390, 510 430, 490 470 C 470 490, 430 490, 410 450" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
+      <!-- Claws (Left) -->
+      <polygon points="280,470 270,480 285,480" fill="#ffffff" stroke="#993300" />
+      <polygon points="295,475 290,488 302,482" fill="#ffffff" stroke="#993300" />
+      <!-- Claws (Right) -->
+      <polygon points="495,470 505,480 490,480" fill="#ffffff" stroke="#993300" />
+      <polygon points="480,475 485,488 472,482" fill="#ffffff" stroke="#993300" />
+    </g>
+
+    <!-- MAIN BODY & TORSO -->
+    <g id="body">
+      <path d="M 330 220 C 300 280, 320 420, 390 460 C 460 420, 480 290, 440 210 C 390 200, 360 200, 330 220 Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
+      <!-- Cream Belly -->
+      <path d="M 345 240 C 325 290, 335 410, 390 450 C 445 410, 450 310, 425 240 C 385 260, 365 260, 345 240 Z" fill="url(#belly-grad)" stroke="#d4af37" stroke-width="1" />
+    </g>
+
+    <!-- ARMS & CLAWS -->
+    <g id="arms">
+      <!-- Left Arm -->
+      <path d="M 320 260 C 270 270, 260 300, 280 320 C 290 310, 310 300, 330 290" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
+      <circle cx="280" cy="320" r="4" fill="#ffffff" />
+      <!-- Right Arm -->
+      <path d="M 450 250 C 500 260, 510 290, 490 310 C 480 300, 460 290, 440 280" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
+      <circle cx="490" cy="310" r="4" fill="#ffffff" />
+    </g>
+
+    <!-- HEAD & NECK (Targeted by Nodding Animation) -->
+    <g id="head">
+      <!-- Neck -->
+      <path d="M 350 220 C 340 180, 360 140, 380 130 C 400 140, 420 170, 430 210 Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
+      <!-- Head Base Structure -->
+      <path d="M 350 140 C 330 130, 330 90, 380 85 C 430 85, 440 120, 410 150 C 380 160, 365 155, 350 140 Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="3" />
+      <!-- Left Horn -->
+      <path d="M 365 90 C 350 70, 310 65, 290 75 C 310 85, 340 95, 355 95 Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="2" />
+      <!-- Right Horn -->
+      <path d="M 395 90 C 410 70, 450 65, 470 75 C 450 85, 420 95, 405 95 Z" fill="url(#skin-grad)" stroke="#993300" stroke-width="2" />
+      <!-- Snout/Jaw Line -->
+      <path d="M 330 115 C 320 125, 340 140, 360 140" fill="none" stroke="#993300" stroke-width="2" />
+      <!-- Turquoise Eye -->
+      <ellipse cx="370" cy="110" rx="7" ry="4" fill="#2bb19c" stroke="#000" stroke-width="1" />
+      <ellipse cx="369" cy="110" rx="3" ry="2" fill="#000000" />
+      <circle cx="368" cy="109" r="1" fill="#ffffff" />
+      <!-- Nostril -->
+      <circle cx="340" cy="120" r="1.5" fill="#551a00" />
+    </g>
+
   </g>
 </svg>
