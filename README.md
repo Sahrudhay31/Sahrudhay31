@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="Sahrudhay Chirra — Full Stack Developer, Cloud Computing Enthusiast" />
+<img src="./banner.svg" width="100%" alt="Sahrudhay Chirra — Full Stack Developer, Cloud Computing Enthusiast" />
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="450">
 
@@ -82,6 +82,6 @@
 ---
 
 <div align="center">
-<img src="./assets/footer.svg" width="100%" alt="" />
+<img src="./footer.svg" width="100%" alt="" />
 <p><i>Thanks for visiting — ⭐ a repo of mine if you found something useful!</i></p>
 </div>
