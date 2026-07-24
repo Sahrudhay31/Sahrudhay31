@@ -1,8 +1,14 @@
 <div align="center">
 
-<img src="./banner.svg" width="100%" alt="Sahrudhay Chirra — Full Stack Developer, Cloud Computing Enthusiast" />
+<img src="./banner.svg" width="100%" alt="Sahrudhay Chirra terminal banner" />
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="450">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=650&lines=AI+%26+Data+Science+Student+%F0%9F%8E%93;NitroStack+Hackathon+Winner+%F0%9F%8F%86;Full-Stack+Developer+%F0%9F%92%BB;Exploring+Agentic+AI+%F0%9F%A4%96;Open+to+Internships+%F0%9F%9A%80" alt="Typing SVG" />
+
+</div>
+
+<div align="center">
+
+> *"I'd rather ship an imperfect product than perfect one that never ships."*
 
 </div>
 
@@ -10,14 +16,17 @@
 
 ### 🧑‍💻 About Me
 
-<img align="right" width="280" src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif">
+<img align="right" width="180" src="https://play.pokemonshowdown.com/sprites/ani/charizard.gif" alt="Charizard" />
 
-- 🎓 Student, currently building projects across the **full stack**
-- ☁️ Exploring **Cloud Computing** with AWS
-- 🌱 Learning something new in tech every single week
-- 💡 Interested in scalable web apps and cloud-native systems
-- 🔗 Portfolio: [sahrudhay31.github.io/Portfolio-Website](https://sahrudhay31.github.io/Portfolio-Website/)
-- 📫 LinkedIn: [sahrudhay-chirra](https://www.linkedin.com/in/sahrudhay-chirra/)
+I'm an **AI & Data Science student at Amrita Vishwa Vidyapeetham**, and I like building things that either think for themselves or scale far beyond my laptop — sometimes both.
+
+- 🏆 Won the **NitroStack Hackathon** — built and shipped something real under pressure
+- 🤖 Exploring **Agentic AI** — systems that don't just respond, they act
+- 💻 Full-stack development across **Python, React, and Next.js**
+- ☁️ Getting hands-on with the cloud through **AWS**
+- 🎯 Currently **open to internships** — always down to build something that matters
+
+*Still evolving, like a certain fire-type — one build at a time. 🔥*
 
 <br clear="right"/>
 
@@ -58,13 +67,7 @@
 
 ---
 
-### 🏆 GitHub Trophies
 
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=sahrudhay31&theme=radical&no-frame=true&no-bg=true&margin-w=10&row=1" />
-</div>
-
----
 
 ### 🌐 Connect with Me
 
